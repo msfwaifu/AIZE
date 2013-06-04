@@ -1,0 +1,147 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui_mp/popupstyle.inc"
+#include "ui/choices_setup_popmenu.menu"
+
+{
+	menuDef
+	{
+		name "scorebar_hd"
+		rect 0 0 640 480 8 8
+		visible 1
+		visible when ( ( ( ! ( ui_active( ) ) ) && ( ! ( flashbanged( ) ) ) && ( ! ( ( weaponname( ) == "killstreak_ac130_mp" ) || ( weaponname( ) == "killstreak_helicopter_minigun_mp" ) || ( weaponname( ) == "killstreak_predator_missile_mp" ) || ( ( weaponname( ) == "ac130_105mm_mp" ) || ( weaponname( ) == "ac130_40mm_mp" ) || ( weaponname( ) == "ac130_25mm_mp" ) ) || ( adsjavelin( ) ) || ( weaponname( ) == "heli_remote_mp" ) || missilecam( ) ) ) && ( !isempjammed( ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) ) && ! ( selecting_location( ) ) && ( ! ( spectatingfree( ) ) ) )
+		forecolor 1 1 1 1
+		itemDef
+		{
+			rect			-60 20 0 0 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM
+			textscale       0.4
+			textstyle 		6
+			forecolor 		0 0.2 1 1
+			glowcolor 		0 0 0 0
+			textfont        9
+			exp text        ("Wave: " + dvarInt( ui_wave ))
+			visible 		1
+			visible when	(1)
+			decoration
+		}
+		itemDef
+		{
+			rect 			-60 35 0 0 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM
+			textscale       0.4
+			textstyle 		6
+			textfont        9
+			forecolor 		1 0.1 0.1 1
+			glowcolor 		0 0 0 0
+			exp text        ("Zombies: " + dvarInt( ui_zombies ))
+			visible 		1
+			visible when	(1)
+			decoration
+		}
+		itemDef
+		{
+			rect 		 	-77 -20 0 0 3 VERTICAL_ALIGN_TOP
+			textscale       0.4
+			textstyle 		6
+			textfont        9
+			forecolor 		0 1 0 1
+			glowcolor 		0 0 0 0
+			exp text	 	("Cash: $" + dvarInt( ui_money ) )
+			visible 		1
+			visible when	(dvarInt( "ui_money" ) >= 9999)
+			decoration
+		}
+		itemDef
+		{
+			rect 		 	-50 -20 0 0 3 VERTICAL_ALIGN_TOP
+			textscale       0.4
+			textstyle 		6
+			textfont        9
+			forecolor 		0 1 0 1
+			glowcolor 		0 0 0 0
+			exp text	 	("Cash: $" + dvarInt( ui_money ) )
+			visible 		1
+			visible when 	( dvarint( "ui_money" ) < 1000 && dvarint("ui_money") > 100 )
+			decoration
+		}
+		itemDef
+		{
+			rect 		 	-55 -20 0 0 3 VERTICAL_ALIGN_TOP
+			textscale       0.4
+			textstyle 		6
+			textfont        9
+			forecolor 		0 1 0 1
+			glowcolor 		0 0 0 0
+			exp text	 	("Cash: $" + dvarInt( ui_money ) )
+			visible 		1
+			visible when 	( dvarint( "ui_money" ) >= 1000 && dvarint( "ui_money" ) < 9999 )
+			decoration
+		}
+		itemDef
+		{
+			rect 		 	-40 -20 0 0 3 VERTICAL_ALIGN_TOP
+			textscale       0.4
+			textstyle 		6
+			textfont        9
+			forecolor 		0 1 0 1
+			glowcolor 		0 0 0 0
+			exp text	 	("Cash: $" + dvarInt( ui_money ) )
+			visible 		1
+			visible when 	( dvarint( "ui_money" ) < 100)
+			decoration
+		}
+		itemDef
+		{
+			rect 		 	-91 -5 0 0 3 VERTICAL_ALIGN_TOP
+			textscale       0.4
+			textstyle 		6
+			textfont        9
+			forecolor 		0 1 1 1
+			glowcolor 		0 0 0 0
+			exp text	 	("Bonus Points: " + dvarInt( ui_bonus ) )
+			visible 		1
+			visible when	(dvarInt( "ui_bonus" ) < 100)
+			decoration
+		}
+		itemDef
+		{
+			rect 		 	-101 -5 0 0 3 VERTICAL_ALIGN_TOP
+			textscale       0.4
+			textstyle 		6
+			textfont        9
+			forecolor 		0 1 1 1
+			glowcolor 		0 0 0 0
+			exp text	 	("Bonus Points: " + dvarInt( ui_bonus ) )
+			visible 		1
+			visible when	(dvarInt( "ui_bonus" ) > 100)
+			decoration
+		}
+		itemDef
+		{
+			rect 		 	-146 10 0 0 3 VERTICAL_ALIGN_TOP
+			textscale       0.4
+			textstyle 		6
+			textfont        9
+			forecolor 		1 0 0 1
+			glowcolor 		0 0 0 0
+			exp text	 	("Power Not Activated")
+			visible 		1
+			visible when	( !dvarbool( ui_power ) )
+			decoration
+		}
+		itemDef
+		{
+			rect 		 	-105 10 0 0 3 VERTICAL_ALIGN_TOP
+			textscale       0.4
+			textstyle 		6
+			textfont        9
+			forecolor 		0 1 0 1
+			glowcolor 		0 0 0 0
+			exp text	 	("Power Activated")
+			visible 		1
+			visible when	( dvarbool( ui_power ) )
+			decoration
+		}
+	}
+}

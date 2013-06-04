@@ -1,0 +1,681 @@
+{
+	menuDef
+	{
+		name single_popmenu
+		fullscreen 1
+		rect 0 0 640 480
+		style 1
+		border 0
+		ownerdraw 0
+		ownerdrawFlag 0
+		borderSize 0
+		foreColor 1 1 1 1
+		backColor 0 0 0 0
+		borderColor 0 0 0 0
+		outlineColor 0 0 0 0
+		soundLoop music_mainmenu_mp
+		fadeCycle 0
+		fadeClamp 0
+		fadeAmount 0
+		fadeInAmount 0
+		blurWorld 0
+		onOpen
+		{
+			focusFirst;
+			setLocalVarString ui_info_icon preview_estate;
+			setfocusbydvar ui_mapname;
+		}
+		onClose
+		{
+			execNow xupdatepartystate;
+		}
+		onESC
+		{
+			close self;
+		}
+		focusColor 1 1 1 1
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background mw2_main_background
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 0 0 1708 480
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0.5
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background mw2_main_cloud_overlay
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			exp rect x ( ( 0 - 107 ) - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) )  )
+		}
+		itemDef
+		{
+			rect 0 0 -1708 -480
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0.5
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background mw2_main_cloud_overlay
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			exp rect x ( ( - 107 + 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) )  )
+		}
+      itemDef
+      {
+         rect 0 0 640 480 4 4
+         style 3
+         border 0
+         ownerdraw 0
+         ownerdrawFlag 0
+         borderSize 0
+         foreColor 1 1 1 0
+         backColor 0 0 0 0
+         borderColor 0 0 0 0
+         outlineColor 0 0 0 0
+         background mockup_bg_glow
+         decoration 
+         type 0
+         align 0
+         textAlign 0
+         textAlignX 0
+         textAlignY 0
+         textScale 0.55
+         textStyle 0
+         textFont 0
+         feeder 0
+         visible 1
+         exp forecolor a ( ( ( ( sin milliseconds( ) / 1500 ) + 1 ) * 0.250000 ) + 0.250000  )
+      }
+      itemDef
+      {
+         rect 0 0 640 480 4 4
+         style 3
+         border 0
+         ownerdraw 0
+         ownerdrawFlag 0
+         borderSize 0
+         foreColor 1 1 1 0
+         backColor 0 0 0 0
+         borderColor 0 0 0 0
+         outlineColor 0 0 0 0
+         background mockup_bg_glow
+         decoration 
+         type 0
+         align 0
+         textAlign 0
+         textAlignX 0
+         textAlignY 0
+         textScale 0.55
+         textStyle 0
+         textFont 0
+         feeder 0
+         visible 1
+         exp forecolor a ( ( ( ( sin milliseconds( ) / 480 ) + 1 ) * 0.250000 ) + 0.250000  )
+      }
+		itemDef
+		{
+			rect 0 28 640 356 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0.15
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background white
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect -32 -4 32 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_tl
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			visible when ( 1  )
+		}
+		itemDef
+		{
+			rect 0 -4 640 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_t
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			visible when ( 1  )
+		}
+		itemDef
+		{
+			rect 640 -4 32 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_tr
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			visible when ( 1  )
+		}
+		itemDef
+		{
+			rect 640 28 32 356 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_r
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			visible when ( 1  )
+		}
+		itemDef
+		{
+			rect 640 384 32 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_br
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			visible when ( 1  )
+		}
+		itemDef
+		{
+			rect 0 384 640 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_b
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			visible when ( 1  )
+		}
+		itemDef
+		{
+			rect -32 384 32 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_bl
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			visible when ( 1  )
+		}
+		itemDef
+		{
+			rect -32 28 32 356 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_l
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			visible when ( 1  )
+		}
+		itemDef
+		{
+			rect 0 0 272 28 1 1
+			style 0
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			type 0
+			align 0
+			textAlign 6
+			textAlignX -60
+			textAlignY 0
+			textScale 0.5
+			textStyle 0
+			textFont 9
+			feeder 0
+			text "@MENU_CHOOSE_MAP_CAP"
+			visible 1
+		}
+		itemDef
+		{
+			rect -64 -20 336 20 1 3
+			style 1
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			origin 0 0
+			background menu_button_selection_bar
+			group mw2_button
+			type 1
+			align 0
+			textAlign 6
+			textAlignX -60
+			textAlignY 0
+			textScale 0.375
+			textStyle 0
+			textFont 3
+			feeder 0
+			text "@PLATFORM_BACK_CAPS"
+			visible 1
+			onFocus
+			{
+				play "mouse_over";
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool ui_menuAButton 1;
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 0.0;
+				setLocalVarBool ui_menuAButton 1;
+			}
+			action
+			{
+				play mouse_click;
+                close self;
+			}
+		}
+		
+#define CHOICE_Y(i) ( 28 + ( i * 20 ) )
+//half pixels are GREAT - well, they seem to work here
+#define HR_ORIGIN(i) 0 ( CHOICE_Y(i) - 0.5 )
+#define CHOICE_ORIGIN(i) -64 CHOICE_Y(i)
+#define CHOICE_RECT(i) CHOICE_ORIGIN(i) 336 20 1 1
+#define HR_RECT(i) HR_ORIGIN(i) 216 1 1 1
+
+#define MENU_CHOICE_BUTTON_VIS( itemIndex, buttonName, textArg, actionArg, visArg, icon, namex, desc) \
+      itemDef \
+      { \
+         name buttonName \
+         rect CHOICE_RECT(itemIndex) \
+         foreColor 1 1 1 1 \
+         backColor 0 0 0 0 \
+         style 1 \
+         origin 0 0 \
+         background menu_button_selection_bar \
+         group mw2_button \
+         type 1 \
+         textAlign 6 \
+         textAlignX -60 \
+         textScale 0.315 \
+		 textStyle 6 \
+         textFont 4 \
+         text textArg \
+         onFocus \
+         { \
+            play mouse_over; \
+            setItemColor self backcolor 0 0 0 1; \
+            setLocalVarBool ui_menuAButton 1; \
+            setLocalVarFloat ui_popupYPos 0.000000; \
+            setLocalVarString ui_info_name namex; \
+            setLocalVarString ui_info_desc desc; \
+            setLocalVarString ui_info_icon icon; \      
+         } \
+         leaveFocus \
+         { \
+            setItemColor self backcolor 0 0 0 0.0; \
+            setLocalVarBool ui_menuAButton 1; \
+         } \
+         action \
+         { \
+            play mouse_click; \
+            actionArg \
+         } \
+         visible visArg \
+      }
+#define HORIZONTAL_LINE(itemIndex) \
+   itemDef \
+      { \
+         rect HR_RECT(itemIndex) \
+         style 3 \
+         border 0 \
+         ownerdraw 0 \
+         ownerdrawFlag 0 \
+         borderSize 0 \
+         foreColor 1 1 1 0.65 \
+         backColor 0 0 0 0 \
+         borderColor 0 0 0 0 \
+         outlineColor 0 0 0 0 \
+         background gradient_fadein \
+         decoration \
+         type 0 \
+         align 0 \
+         textAlign 0 \
+         textAlignX 0 \
+         textAlignY 0 \
+         textScale 0.55 \
+         textStyle 0 \
+         textFont 0 \
+         feeder 0 \
+         visible 1 \
+      }
+
+      MENU_CHOICE_BUTTON_VIS(0, ;, "Airport",setdvar ui_mapname airport;close single_popmenu;close settings_map;close self;, 1, preview_airport, "Airport", "Ported Single Player Map.")  
+      
+      MENU_CHOICE_BUTTON_VIS(1, ;, "Arcadia",setdvar ui_mapname arcadia;close single_popmenu;close settings_map;close self;, 1, preview_arcadia, "Arcadia", "Ported Single Player Map.")      
+    
+      MENU_CHOICE_BUTTON_VIS(2, ;, "Brazil",setdvar ui_mapname favela;close single_popmenu;close settings_map;close self;, 1, preview_favela, "Brazil", "Ported Single Player Map.")    	  
+	  
+      MENU_CHOICE_BUTTON_VIS(3, ;, "Summertime Hell",setdvar ui_mapname invasion;close single_popmenu;close settings_map;close self;, 1, preview_invasion, "Burger Town", "The apocalypse has broke lose and now it's in your backyard.")
+	  
+      MENU_CHOICE_BUTTON_VIS(4, ;, "Cargoship",setdvar ui_mapname so_bridge;close single_popmenu;close settings_map;close self;, 1, preview_so_bridge, "Cargoship", "Ported Special Ops Map.")
+	  
+	  MENU_CHOICE_BUTTON_VIS(5, ;, "Caves",setdvar ui_mapname af_caves;close single_popmenu;close settings_map;close self;, 1, preview_af_caves, "Caves", "Ported Single Player Map.")      
+
+      MENU_CHOICE_BUTTON_VIS(6, ;, "Cliffhanger",setdvar ui_mapname cliffhanger;close single_popmenu;close settings_map;close self;, 1, preview_cliffhanger, "Cliffhanger", "Ported Single Player Map.")      
+
+      MENU_CHOICE_BUTTON_VIS(7, ;, "Crossfire",setdvar ui_mapname favela_escape;close single_popmenu;close settings_map;close self;, 1, preview_favela_escape, "Crossfire", "Ported Single Player Map.")
+	  
+	  MENU_CHOICE_BUTTON_VIS(8, ;, "Contingency",setdvar ui_mapname contingency;close single_popmenu;close settings_map;close self;, 1, preview_contingency, "Contingency", "Ported Single Player Map.")      
+
+      MENU_CHOICE_BUTTON_VIS(9, ;, "EMP",setdvar ui_mapname dcemp;close single_popmenu;close settings_map;close self;, 1, preview_dcemp, "EMP", "Ported Single Player Map.")
+	  
+	  MENU_CHOICE_BUTTON_VIS(10, ;, "Gulag",setdvar ui_mapname gulag;close single_popmenu;close settings_map;close self;, 1, preview_gulag, "Gulag", "Ported Single Player Map.")      
+	  
+      MENU_CHOICE_BUTTON_VIS(11, ;, "Museum",setdvar ui_mapname ending;close single_popmenu;close settings_map;close self;, 1, preview_ending, "Museum", "Ported Single Player Map.")    
+	  
+	  MENU_CHOICE_BUTTON_VIS(12, ;, "Safe House",setdvar ui_mapname estate;close single_popmenu;close settings_map; close self;, 1, preview_estate, "Safe House", "The TF141/OP40 have been sent to investigate this rich Estate oozing with 115.")	  
+	  
+      MENU_CHOICE_BUTTON_VIS(13, ;, "School",setdvar ui_mapname roadkill;close single_popmenu;close settings_map;close self;, 1, preview_roadkill, "School", "Ported Single Player Map.")
+	 
+	  MENU_CHOICE_BUTTON_VIS(14, ;, "The Pit",setdvar ui_mapname trainer;close single_popmenu;close settings_map;close self;, 1, preview_trainer, "The Pit", "Ported Single Player Map.")
+	  
+      MENU_CHOICE_BUTTON_VIS(15, ;, "Oilrig",setdvar ui_mapname oilrig;close single_popmenu;close settings_map;close self;, 1, preview_oilrig, "Oilrig", "Ported Single Player Map.")      
+	  
+	  MENU_CHOICE_BUTTON_VIS(16, ;, "White House",setdvar ui_mapname dcburning;close single_popmenu;close settings_map;close self;, 1, preview_dcburning, "White House", "Ported Single Player Map.")
+
+	  itemDef
+		{
+			rect -292 28 292 356 3 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 0.7
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background black
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 6
+			textFont 4
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			name mapimage
+			rect -282 50 272 153 3 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 6
+			textFont 4
+			feeder 0
+			visible when(localvarstring( "ui_info_icon") != "")
+			exp material ( localvarstring( "ui_info_icon" )  )
+		}
+		itemDef
+		{
+			name longname
+			rect -282 28 272 22 3 1
+			style 0
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			type 0
+			align 0
+			textAlign 4
+			textAlignX 0
+			textAlignY 0
+			textScale 0.375
+			textStyle 6
+			textFont 4
+			feeder 0
+			visible 1
+			exp text ( "@" + localvarstring( "ui_info_name" )  )
+		}
+		itemDef
+		{
+			name description
+			rect -282 203 272 20 3 1
+			style 0
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0.65
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			autoWrapped 
+			type 0
+			align 0
+			textAlign 4
+			textAlignX 0
+			textAlignY 0
+			textScale 0.375
+			textStyle 6
+			textFont 4
+			feeder 0
+			visible 1
+			exp text ( "@" + localvarstring( "ui_info_desc" )  )
+		}
+	}
+}

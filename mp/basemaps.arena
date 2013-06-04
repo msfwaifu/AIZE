@@ -1,0 +1,528 @@
+{
+	map			"mp_invasion"
+	longname	"Mob of the Bridge"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_INVASION"
+    mapimage    "preview_mp_invasion"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_composite"
+    environment	"urban"
+}
+
+{
+	map			"mp_highrise"
+	longname	"High Hilton"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_HIGHRISE"
+    mapimage    "preview_mp_highrise"
+	mapoverlay  "compass_overlay_map_blank"
+	allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment	"urban"
+}
+
+{
+	map			"mp_checkpoint"
+	longname	"Shipping Dock"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_checkpoint"
+    mapimage    "preview_mp_checkpoint"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "seals_udt"
+    axischar    "opforce_composite"
+    environment	"urban"
+}
+
+{
+	map			"mp_nightshift"
+	longname	"Sunrise Apartments"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_nightshift"
+    mapimage    "preview_mp_nightshift"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment	"urban"
+}
+
+{
+	map			"mp_favela"
+	longname	"Rundown Town"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_favela"
+    mapimage    "preview_mp_favela"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "militia"
+    environment	"urban"
+}
+
+{
+	map			"mp_quarry"
+	longname	"High Cry"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "Fight Zombies on a High Block of Bones"
+    mapimage    "preview_mp_quarry"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "militia"
+    environment	"desert"
+}
+
+{
+	map			"mp_brecourt"
+	longname	"Apartment Rooftops"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_BRECOURT"
+    mapimage    "preview_mp_brecourt"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_forest"
+    axischar    "opforce_airborne"
+    environment	"forest"
+}
+
+{
+	map			"mp_derail"
+	longname	"Frozen Warehouse"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_DERAIL"
+    mapimage    "preview_mp_derail"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_arctic"
+    axischar    "opforce_arctic"
+    environment	"arctic"
+}
+
+{
+	map			"mp_subbase"
+	longname	"Sub Pens of Hell"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_SUBBASE"
+    mapimage    "preview_mp_subbase"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "seals_udt"
+    axischar    "opforce_arctic"
+    environment	"urban"
+}
+
+{
+	map			"mp_underpass"
+	longname	"Shipping Yard"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_UNDERPASS"
+    mapimage    "preview_mp_underpass"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_forest"
+    axischar    "militia"
+    environment	"forest"
+}
+
+{
+	map			"mp_estate"
+	longname	"Falls of Hell"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_ESTATE"
+    mapimage    "preview_mp_estate"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_forest"
+    axischar    "opforce_airborne"
+    environment	"forest"
+}
+
+{
+	map			"estate"
+	longname	"Safehouse"
+	gametype	"dm war"
+    description "MPUI_DESC_MAP_ESTATE"
+    mapimage    "preview_mp_estate"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_forest"
+    axischar    "opforce_airborne"
+    environment	"forest"
+}
+
+{
+	map			"mp_rundown"
+	longname	"Old Shack"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_RUNDOWN"
+    mapimage    "preview_mp_rundown"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "militia"
+    environment	"desert"
+}
+
+{
+	map			"mp_boneyard"
+	longname	"Deserted Entrance"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_BONEYARD"
+    mapimage    "preview_mp_boneyard"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "opforce_composite"
+    environment	"desert"
+}
+
+{
+	map			"mp_afghan"
+	longname	"Desert Wasteland"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_AFGHAN"
+    mapimage    "preview_mp_afghan"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "opforce_composite"
+    environment	"desert"
+}
+
+{
+	map			"mp_terminal"
+	longname	"Death Row"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_TERMINAL"
+    mapimage    "preview_mp_terminal"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment	"urban"
+}
+
+{
+	map			"mp_rust"
+	longname	"Abandoned Mill"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "MPUI_DESC_MAP_RUST"
+    mapimage    "preview_mp_rust"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "opforce_composite"
+    environment	"desert"
+}
+
+{
+	map			"mp_storm"
+	longname	"Dryed Aqueduct"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "PATCH_DESC_MAP_STORM"
+    mapimage    "preview_mp_storm"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "opforce_airborne"
+    environment	"urban"
+}
+
+{
+	map			"mp_compact"
+	longname	"Snowy Vacation"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "PATCH_DESC_MAP_COMPACT"
+    mapimage    "preview_mp_compact"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_arctic"
+    axischar    "opforce_arctic"
+    environment	"urban"
+}
+
+{
+	map			"mp_complex"
+	longname	"Apartment Invasion"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "PATCH_DESC_MAP_COMPLEX"
+    mapimage    "preview_mp_complex"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment	"urban"
+}
+
+{
+	map			"mp_crash"
+	longname	"Hell Tunnel"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "MPUI_DESC_MAP_CRASH"
+    mapimage    "preview_mp_crash"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "opforce_composite"
+    environment	"urban"
+}
+
+{
+	map			"mp_overgrown"
+	longname	"Overgrown Hell"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "MPUI_DESC_MAP_OVERGROWN"
+    mapimage    "preview_mp_overgrown"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_forest"
+    axischar    "opforce_airborne"
+    environment	"forest"
+}
+
+
+{
+	map			"mp_abandon"
+	longname	"Carnival Parking Lot"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "PATCH_DESC_MAP_ABANDON"
+    mapimage    "preview_mp_abandon"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "militia"
+    environment	"urban"
+}
+
+{
+	map			"mp_fuel2"
+	longname	"Oil Fields"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "PATCH_DESC_MAP_FUEL2"
+    mapimage    "preview_mp_fuel2"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_composite"
+    environment	"desert"
+}
+
+{
+	map			"mp_trailerpark"
+	longname	"Abandoned Gas Station"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "PATCH_DESC_MAP_TRAILERPARK"
+    mapimage    "preview_mp_trailerpark"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_composite"
+    environment	"urban"
+}
+
+{
+	map			"mp_vacant"
+	longname	"Chernoybl Disaster"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "PATCH_DESC_MAP_VACANT"
+    mapimage    "preview_mp_vacant"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment	"urban"
+}
+
+{
+	map			"mp_strike"
+	longname	"Back Ally"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+    description "PATCH_DESC_MAP_STRIKE"
+    mapimage    "preview_mp_strike"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_composite"
+    environment	"desert"
+}
+
+{
+	map			"oilrig"
+	longname	"MPUI_OILRIG"
+	gametype	"dm war dom ctf sd dd"
+    description "MPUI_OILRIG"
+    mapimage    "preview_mp_oilrig"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "seals_udt"
+    axischar    "opforce_arctic"
+    environment	"urban"
+}
+
+{
+	map			"gulag"
+	longname	"MPUI_GULAG"
+	gametype	"dm war dom ctf"
+    description "MPUI_DESC_MAP_GULAG"
+    mapimage    "preview_mp_gulag"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "seals_udt"
+    axischar    "opforce_arctic"
+    environment	"urban"
+}
+
+{
+	map			"invasion"
+	longname	"Summertime Hell"
+	gametype	"dm war dom ctf"
+    description ""
+    mapimage    "preview_invasion"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_composite"
+    environment	"urban"
+}
+
+{
+	map			"iw4_credits"
+	longname	"IW4 Test Map"
+	gametype	"dm war dom ctf sd"
+    description ""
+    mapimage    "preview_iw4_credits"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_desert"
+    axischar    "opforce_composite"
+    environment	"desert"
+}
+
+{
+	map			"so_ghillies"
+	longname	"Pripyat"
+	gametype	"dm war"
+    description ""
+    mapimage    "preview_so_ghillies"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_forest"
+    axischar    "opforce_airborne"
+    environment	"forest"
+}
+
+{
+	map			"contingency"
+	longname	"Contingency"
+	gametype	"dm war"
+    description ""
+    mapimage    "preview_mp_contingency"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "seals_udt"
+    axischar    "opforce_arctic"
+    environment	"urban"
+}
+
+{
+	map			"arcadia"
+	longname	"Arcadia"
+	gametype	"dm war dom ctf oneflag gtnw"
+    description "A Suburban Neighborhood"
+    mapimage    "preview_mp_arcadia"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment	"urban"
+}
+
+{
+	map		"airport"
+	longname	"Airport"
+	gametype	"dm war dom sd sd2 ctf oneflag ss gg oitc"
+    description "MPUI_DESC_MAP_TERMINAL"
+    mapimage    "preview_mp_airport"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment	"urban"
+}
+
+{
+	map			"co_hunted"
+	longname	"Farm Side"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+    description "Russian village in the evening"
+    mapimage    "preview_co_hunted"
+	mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_forest"
+    axischar    "militia"
+    environment	"forest"
+}
+
+{
+	map		"mp_bloc"
+	longname	"Bloc"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+	description	"MPUI_DESC_MAP_BLOC"
+	mapimage	"preview_mp_bloc"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_airborne"
+	environment	"urban"
+}
+
+{
+	map		"mp_cargoship"
+	longname	"Cargoship"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+	description	"MPUI_DESC_MAP_CARGOSHIP"
+	mapimage	"preview_mp_cargoship"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_airborne"
+	environment	"urban"
+}
+
+{
+	map		"mp_crash_tropical"
+	longname	"Crash Tropical"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+	description	"MPUI_DESC_MAP_CRASH_TROPICAL"
+	mapimage	"preview_mp_crash_tropical"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_airborne"
+	environment	"urban"
+}
+
+{
+	map		"mp_cross_fire"
+	longname	"Crossfire"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+	description	"MPUI_DESC_MAP_CROSSFIRE"
+	mapimage	"preview_mp_crossfire"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_airborne"
+	environment	"urban"
+}
+
+{
+	map		"mp_fav_tropical"
+	longname	"Tropical"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+	description	"MPUI_DESC_MAP_FAV_TROPICAL"
+	mapimage	"preview_mp_fav_tropical"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_airborne"
+	environment	"urban"
+}
+
+{
+	map		"mp_killhouse"
+	longname	"Killhouse" //Мясорубка
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+	description	"MPUI_DESC_MAP_KILLHOUSE" //Складское помещение. Подходит для маленьких команд.
+	mapimage	"preview_mp_killhouse"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_airborne"
+	environment	"urban"
+}
+
+{
+	map		"mp_nuked"
+	longname	"Nuketown" //Nuketown
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+	description	"MPUI_DESC_MAP_NUKED" //Ядерный полигон. Напряженные и динамичные сражения.
+	mapimage	"preview_mp_nuked"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_airborne"
+	environment	"urban"
+}
+
+{
+	map		"mp_suburbs"
+	longname	"Suburbs"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+	description	"MPUI_DESC_MAP_SUBURBS"
+	mapimage	"preview_mp_nuked"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_airborne"
+	environment	"urban"
+}
